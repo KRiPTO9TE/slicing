@@ -75,6 +75,13 @@ flutter:
      - assets/img/History 1.png
      - assets/img/Notification 1.png
      - assets/img/Profile 1.png
+     - assets/img/up.png
+     - assets/img/logos_paypal.png
+     - assets/img/cek.png
+     - assets/img/unc.png
+     - assets/img/check.png
+     - assets/img/logos_mastercard.png
+     - assets/img/visa.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

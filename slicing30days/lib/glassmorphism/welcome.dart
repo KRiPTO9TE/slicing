@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:slicing30days/cart/cart.dart';
 import 'package:slicing30days/glassmorphism/glasmorphism.dart';
 import 'package:slicing30days/theme.dart';
 
@@ -206,18 +207,27 @@ class Welcome extends StatelessWidget {
                         ),
                         Column(
                           children: [
-                            Glassmorphism(
-                              border: 1.5,
-                              blur: 15,
-                              opacity: 0.2,
-                              radius: 20,
-                              child: Container(
-                                  height: 64,
-                                  width: 64,
-                                  padding: const EdgeInsets.all(20),
-                                  child: Image.asset(
-                                    "assets/img/game.png",
-                                  )),
+                            InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Cart()),
+                                );
+                              },
+                              child: Glassmorphism(
+                                border: 1.5,
+                                blur: 15,
+                                opacity: 0.2,
+                                radius: 20,
+                                child: Container(
+                                    height: 64,
+                                    width: 64,
+                                    padding: const EdgeInsets.all(20),
+                                    child: Image.asset(
+                                      "assets/img/game.png",
+                                    )),
+                              ),
                             ),
                             SizedBox(
                               height: 12,
